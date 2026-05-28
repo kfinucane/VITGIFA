@@ -1,18 +1,18 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# VITGIFA
+# VI-TGIFA
 
-The VITGIFA R package presents a set of functions that perform missing
+The VI-TGIFA R package presents a set of functions that perform missing
 data imputation using a truncated Gaussian infinite factor analysis
 model designed for high-dimensional metabolomics data, with variational
 inference used for inference.
 
 ## Installation
 
-You can access VITGIFA by downloading the code from this repository. You
-should ensure that you have the VIMSFA R package installed in order to
-use VI-TGIFA. This package can be installed as follows:
+You can access VI-TGIFA by downloading the code from this repository.
+You should ensure that you have the VIMSFA R package installed in order
+to use VI-TGIFA. This package can be installed as follows:
 
 ``` r
 # install remotes package if not already installed
@@ -27,7 +27,7 @@ generated with two missing values.
 
 ``` r
 # source the relevant script
-source("V-TGIFA_model.R")
+source("VI-TGIFA_model.R")
 
 # generate example data
 set.seed(1)
@@ -50,7 +50,7 @@ number.
 
 ``` r
 # run VI-TGIFA method
-res <- V_TGIFA_model(input_data = example_data, k.star = 3,
+res <- VI_TGIFA_model(input_data = example_data, k.star = 3,
                      n.iters_min = 5, n.iters_max = 50)
 ```
 

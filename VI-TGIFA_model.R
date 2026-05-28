@@ -1,6 +1,6 @@
 
 
-V_TGIFA_model <- function(input_data, coding = NA, n.iters_min,
+VI_TGIFA_model <- function(input_data, coding = NA, n.iters_min,
                         n.iters_max, k.star = 5, tolerance = 1,
                         imp.iters_min = 2, imp.iters_max = 10,
                         imp_pc_tol = 0.1, n_imp = 10,
@@ -10,7 +10,7 @@ V_TGIFA_model <- function(input_data, coding = NA, n.iters_min,
                         return_multiple = FALSE, return_params = TRUE,
                         init_imp = "half_min") {
 
-  source("V-TGIFA_utils.R")
+  source("VI-TGIFA_utils.R")
   source("cavi_TGIFA_update_functions.R")
 
   # record inputs to include in output
