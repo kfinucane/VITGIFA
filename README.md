@@ -38,13 +38,13 @@ example_data[4, 2] <- NA
 example_data[2, 18] <- NA
 ```
 
-This example data can then be passed into the `V_TGIFA_model()` function
-which contains all functionality. Here, `input_data` is the dataset with
-missing values, in matrix format. The `coding` argument refers to how
-the missing values are coded. If your missing values all have a value of
-`NA`, for example, you should input `coding = NA`. Here, the value
-`k.star = 3` refers to the practical non-infinite number of latent
-factors used by the VI-TGIFA model; usually this defaults to
+This example data can then be passed into the `VI_TGIFA_model()`
+function which contains all functionality. Here, `input_data` is the
+dataset with missing values, in matrix format. The `coding` argument
+refers to how the missing values are coded. If your missing values all
+have a value of `NA`, for example, you should input `coding = NA`. Here,
+the value `k.star = 3` refers to the practical non-infinite number of
+latent factors used by the VI-TGIFA model; usually this defaults to
 `k.star = 5` but for this small example dataset we will use a smaller
 number.
 
@@ -94,7 +94,7 @@ The remaining parameters, `kappa_1`, `kappa_2`, `a_sigma`, `b_sigma`,
 `a_1`, and `a_2` are hyperparameters of the VI-TGIFA model.
 
 ``` r
-res <- V_TGIFA_model(input_data = example_data, k.star = 3,
+res <- VI_TGIFA_model(input_data = example_data, k.star = 3,
                      n.iters_min = 5, n.iters_max = 50, tolerance = 0.01,
                      imp.iters_min = 3, imp.iters_max = 10, n_imp = 100,
                      imp_pc_tol = 0.05,
